@@ -1,0 +1,47 @@
+model_name_or_path: Qwen/Qwen3-4B-Instruct-2507
+attn_implementation: sdpa
+dataset_name: gsm8k_ifeval
+dataset_train_split: train
+dataset_test_split: test
+reward_funcs:
+- correctness
+- ifeval_constraint
+num_objectives: 2
+pareto_r: 8
+pareto_alpha: 128
+num_preference_samples: 4
+annealing_temperature: 0.3
+preference_sampling: coverage
+num_generations: 8
+max_completion_length: 1024
+temperature: 0.6
+top_p: 0.95
+max_steps: 500
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 64
+learning_rate: 1.0e-06
+gradient_checkpointing: true
+lr_scheduler_type: cosine
+warmup_steps: 50
+bf16: true
+epsilon: 0.2
+epsilon_high: 0.28
+beta: 0.2
+multi_objective_aggregation: normalize_then_sum
+logging_steps: 5
+save_strategy: steps
+save_steps: 25
+report_to: none
+run_name: qwen3_4b_gsm8k_lambdamix
+output_dir: outputs/qwen3_4b/gsm8k/lambdamix
+use_vllm: false
+generation_kwargs:
+  stop_token_ids:
+  - 151645
+pareto_a_init: rank_scaled
+loss_type: dapo
+generation_batch_size: 8
+gradient_checkpointing_kwargs:
+  use_reentrant: false
+weight_decay: 0.0
+optim: adamw_torch

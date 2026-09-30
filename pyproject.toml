@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lambdamix"
+version = "0.1.0"
+description = "Preference-conditioned low-rank adapters for multi-objective reinforcement learning"
+readme = "README.md"
+requires-python = ">=3.10,<3.15"
+license = {text = "MIT"}
+authors = [
+    {name = "Constantinos Karouzos"}
+]
+keywords = ["multi-objective", "reinforcement-learning", "low-rank-adaptation", "alignment"]
+dependencies = [
+    "torch==2.11.0",
+    "transformers==5.15.0",
+    "trl==0.29.1",
+    "peft==0.19.1",
+    "accelerate==1.14.0",
+    "datasets==4.0.0",
+    "vllm==0.20.2",
+    "math-verify",
+    "numpy",
+    "pyyaml",
+    "rouge-score",
+]
+
+[project.urls]
+Repository = "https://github.com/ckarouzos/lambdamix"
+
+[project.scripts]
+lambdamix-train = "lambdamix.training.lambdamix:main"
+lambdamix-eval = "lambdamix.evaluation.fronts:main"
+lambdamix-train-fixed = "lambdamix.training.fixed:main"
+lambdamix-train-promptcond = "lambdamix.training.prompt:main"
+lambdamix-eval-mapreduce = "lambdamix.evaluation.merging:main"
+lambdamix-export-merged = "lambdamix.evaluation.export:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

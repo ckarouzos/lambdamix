@@ -1,0 +1,75 @@
+model_name_or_path: Qwen/Qwen3-4B-Instruct-2507
+attn_implementation: sdpa
+trust_remote_code: false
+dataset_name: gsm8k_ifeval
+dataset_train_split: train
+dataset_test_split: test
+reward_funcs:
+- correctness
+- ifeval_constraint
+num_generations: 8
+generation_batch_size: 8
+max_completion_length: 1024
+temperature: 0.6
+top_p: 0.95
+max_steps: 500
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 64
+learning_rate: 1.0e-06
+gradient_checkpointing: true
+lr_scheduler_type: cosine
+warmup_steps: 50
+bf16: true
+epsilon: 0.2
+epsilon_high: 0.28
+beta: 0.2
+loss_type: dapo
+use_vllm: false
+use_transformers_paged: false
+seed: 42
+data_seed: 42
+logging_steps: 5
+save_strategy: steps
+save_steps: 25
+save_total_limit: 3
+report_to: none
+run_name: qwen3_4b_gsm8k_dynamicrw
+output_dir: outputs/qwen3_4b/gsm8k/dynamicrw
+generation_kwargs:
+  stop_token_ids:
+  - 151645
+reward_weights:
+- 0.5
+- 0.5
+use_peft: true
+lora_r: 8
+lora_alpha: 128
+lora_dropout: 0.0
+lora_target_modules:
+- q_proj
+- v_proj
+drw_init_weights:
+- 0.5
+- 0.5
+drw_regularization_factor: 1.0e-05
+drw_target_layer_ids:
+- 10
+- 11
+- 12
+- 13
+- 14
+- 15
+- 16
+- 17
+- 18
+- 19
+- 20
+- 21
+- 22
+- 23
+- 24
+- 25
+drw_grad_clip: 1.0
+scale_rewards: group
+weight_decay: 0.0
+optim: adamw_torch

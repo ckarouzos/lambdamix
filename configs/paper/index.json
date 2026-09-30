@@ -1,0 +1,800 @@
+[
+  {
+    "config": "configs/paper/olmo3_7b/gsm8k/dynamicrw.yaml",
+    "module": "lambdamix.training.dynamicrw",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/olmo3_7b/gsm8k/gdpo.yaml",
+    "module": "lambdamix.training.fixed",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/olmo3_7b/gsm8k/grpo.yaml",
+    "module": "lambdamix.training.fixed",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/olmo3_7b/gsm8k/hoe.yaml",
+    "module": "lambdamix.training.hoe",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/olmo3_7b/gsm8k/lambdamix.yaml",
+    "module": "lambdamix.training.lambdamix",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/olmo3_7b/gsm8k/lambdamix_no_norm.yaml",
+    "module": "lambdamix.training.lambdamix",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/olmo3_7b/gsm8k/moc.yaml",
+    "module": "lambdamix.training.moc",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/olmo3_7b/gsm8k/panacea.yaml",
+    "module": "lambdamix.training.panacea",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/olmo3_7b/gsm8k/paretopo.yaml",
+    "module": "lambdamix.training.paretopo",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/olmo3_7b/gsm8k/prism.yaml",
+    "module": "lambdamix.training.prism",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/olmo3_7b/gsm8k/prompt.yaml",
+    "module": "lambdamix.training.prompt",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/olmo3_7b/pku/dynamicrw.yaml",
+    "module": "lambdamix.training.dynamicrw",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/olmo3_7b/pku/gdpo.yaml",
+    "module": "lambdamix.training.fixed",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/olmo3_7b/pku/grpo.yaml",
+    "module": "lambdamix.training.fixed",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/olmo3_7b/pku/hoe.yaml",
+    "module": "lambdamix.training.hoe",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/olmo3_7b/pku/lambdamix.yaml",
+    "module": "lambdamix.training.lambdamix",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/olmo3_7b/pku/lambdamix_no_norm.yaml",
+    "module": "lambdamix.training.lambdamix",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/olmo3_7b/pku/moc.yaml",
+    "module": "lambdamix.training.moc",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/olmo3_7b/pku/panacea.yaml",
+    "module": "lambdamix.training.panacea",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/olmo3_7b/pku/paretopo.yaml",
+    "module": "lambdamix.training.paretopo",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/olmo3_7b/pku/preference_vector_harmless_minus.yaml",
+    "module": "lambdamix.training.preference_vector",
+    "processes": 8,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/olmo3_7b/pku/preference_vector_harmless_plus.yaml",
+    "module": "lambdamix.training.preference_vector",
+    "processes": 8,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/olmo3_7b/pku/preference_vector_helpful_minus.yaml",
+    "module": "lambdamix.training.preference_vector",
+    "processes": 8,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/olmo3_7b/pku/preference_vector_helpful_plus.yaml",
+    "module": "lambdamix.training.preference_vector",
+    "processes": 8,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/olmo3_7b/pku/prism.yaml",
+    "module": "lambdamix.training.prism",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/olmo3_7b/pku/prompt.yaml",
+    "module": "lambdamix.training.prompt",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen35_9b/gsm8k/conditioning_mixture_only.yaml",
+    "module": "lambdamix.training.lambdamix",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen35_9b/gsm8k/conditioning_weight_only.yaml",
+    "module": "lambdamix.training.lambdamix",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen35_9b/gsm8k/dynamicrw.yaml",
+    "module": "lambdamix.training.dynamicrw",
+    "processes": 8,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen35_9b/gsm8k/gdpo.yaml",
+    "module": "lambdamix.training.fixed",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen35_9b/gsm8k/grpo.yaml",
+    "module": "lambdamix.training.fixed",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen35_9b/gsm8k/hoe.yaml",
+    "module": "lambdamix.training.hoe",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen35_9b/gsm8k/lambdamix.yaml",
+    "module": "lambdamix.training.lambdamix",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen35_9b/gsm8k/lambdamix_no_norm.yaml",
+    "module": "lambdamix.training.lambdamix",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen35_9b/gsm8k/moc.yaml",
+    "module": "lambdamix.training.moc",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen35_9b/gsm8k/panacea.yaml",
+    "module": "lambdamix.training.panacea",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen35_9b/gsm8k/paretopo.yaml",
+    "module": "lambdamix.training.paretopo",
+    "processes": 8,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen35_9b/gsm8k/prism.yaml",
+    "module": "lambdamix.training.prism",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen35_9b/gsm8k/prompt.yaml",
+    "module": "lambdamix.training.prompt",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen35_9b/pku/conditioning_both_fixed.yaml",
+    "module": "lambdamix.training.lambdamix",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen35_9b/pku/conditioning_mixture_only.yaml",
+    "module": "lambdamix.training.lambdamix",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen35_9b/pku/conditioning_weight_only.yaml",
+    "module": "lambdamix.training.lambdamix",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen35_9b/pku/dynamicrw.yaml",
+    "module": "lambdamix.training.dynamicrw",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen35_9b/pku/gdpo.yaml",
+    "module": "lambdamix.training.fixed",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen35_9b/pku/grpo.yaml",
+    "module": "lambdamix.training.fixed",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen35_9b/pku/hoe.yaml",
+    "module": "lambdamix.training.hoe",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen35_9b/pku/lambdamix.yaml",
+    "module": "lambdamix.training.lambdamix",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen35_9b/pku/lambdamix_no_norm.yaml",
+    "module": "lambdamix.training.lambdamix",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen35_9b/pku/moc.yaml",
+    "module": "lambdamix.training.moc",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen35_9b/pku/panacea.yaml",
+    "module": "lambdamix.training.panacea",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen35_9b/pku/paretopo.yaml",
+    "module": "lambdamix.training.paretopo",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen35_9b/pku/preference_vector_harmless_minus.yaml",
+    "module": "lambdamix.training.preference_vector",
+    "processes": 8,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen35_9b/pku/preference_vector_harmless_plus.yaml",
+    "module": "lambdamix.training.preference_vector",
+    "processes": 8,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen35_9b/pku/preference_vector_helpful_minus.yaml",
+    "module": "lambdamix.training.preference_vector",
+    "processes": 8,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen35_9b/pku/preference_vector_helpful_plus.yaml",
+    "module": "lambdamix.training.preference_vector",
+    "processes": 8,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen35_9b/pku/prism.yaml",
+    "module": "lambdamix.training.prism",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen35_9b/pku/prompt.yaml",
+    "module": "lambdamix.training.prompt",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen35_9b/synthpai/conditioning_mixture_only.yaml",
+    "module": "lambdamix.training.lambdamix",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen35_9b/synthpai/conditioning_weight_only.yaml",
+    "module": "lambdamix.training.lambdamix",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen35_9b/synthpai/dynamicrw.yaml",
+    "module": "lambdamix.training.dynamicrw",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen35_9b/synthpai/gdpo.yaml",
+    "module": "lambdamix.training.fixed",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen35_9b/synthpai/grpo.yaml",
+    "module": "lambdamix.training.fixed",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen35_9b/synthpai/hoe.yaml",
+    "module": "lambdamix.training.hoe",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen35_9b/synthpai/lambdamix.yaml",
+    "module": "lambdamix.training.lambdamix",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen35_9b/synthpai/lambdamix_no_norm.yaml",
+    "module": "lambdamix.training.lambdamix",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen35_9b/synthpai/moc.yaml",
+    "module": "lambdamix.training.moc",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen35_9b/synthpai/panacea.yaml",
+    "module": "lambdamix.training.panacea",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen35_9b/synthpai/paretopo.yaml",
+    "module": "lambdamix.training.paretopo",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen35_9b/synthpai/prism.yaml",
+    "module": "lambdamix.training.prism",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen35_9b/synthpai/prompt.yaml",
+    "module": "lambdamix.training.prompt",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen36_27b/gsm8k/dynamicrw.yaml",
+    "module": "lambdamix.training.dynamicrw",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen36_27b/gsm8k/gdpo.yaml",
+    "module": "lambdamix.training.fixed",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen36_27b/gsm8k/grpo.yaml",
+    "module": "lambdamix.training.fixed",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen36_27b/gsm8k/hoe.yaml",
+    "module": "lambdamix.training.hoe",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen36_27b/gsm8k/lambdamix.yaml",
+    "module": "lambdamix.training.lambdamix",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen36_27b/gsm8k/lambdamix_no_norm.yaml",
+    "module": "lambdamix.training.lambdamix",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen36_27b/gsm8k/moc.yaml",
+    "module": "lambdamix.training.moc",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen36_27b/gsm8k/panacea.yaml",
+    "module": "lambdamix.training.panacea",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen36_27b/gsm8k/paretopo.yaml",
+    "module": "lambdamix.training.paretopo",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen36_27b/gsm8k/prism.yaml",
+    "module": "lambdamix.training.prism",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen36_27b/gsm8k/prompt.yaml",
+    "module": "lambdamix.training.prompt",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen36_27b/pku/dynamicrw.yaml",
+    "module": "lambdamix.training.dynamicrw",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen36_27b/pku/gdpo.yaml",
+    "module": "lambdamix.training.fixed",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen36_27b/pku/grpo.yaml",
+    "module": "lambdamix.training.fixed",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen36_27b/pku/hoe.yaml",
+    "module": "lambdamix.training.hoe",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen36_27b/pku/lambdamix.yaml",
+    "module": "lambdamix.training.lambdamix",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen36_27b/pku/lambdamix_no_norm.yaml",
+    "module": "lambdamix.training.lambdamix",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen36_27b/pku/moc.yaml",
+    "module": "lambdamix.training.moc",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen36_27b/pku/panacea.yaml",
+    "module": "lambdamix.training.panacea",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen36_27b/pku/paretopo.yaml",
+    "module": "lambdamix.training.paretopo",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen36_27b/pku/preference_vector_harmless_minus.yaml",
+    "module": "lambdamix.training.preference_vector",
+    "processes": 8,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen36_27b/pku/preference_vector_harmless_plus.yaml",
+    "module": "lambdamix.training.preference_vector",
+    "processes": 8,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen36_27b/pku/preference_vector_helpful_minus.yaml",
+    "module": "lambdamix.training.preference_vector",
+    "processes": 8,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen36_27b/pku/preference_vector_helpful_plus.yaml",
+    "module": "lambdamix.training.preference_vector",
+    "processes": 8,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen36_27b/pku/prism.yaml",
+    "module": "lambdamix.training.prism",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen36_27b/pku/prompt.yaml",
+    "module": "lambdamix.training.prompt",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen36_27b/synthpai/dynamicrw.yaml",
+    "module": "lambdamix.training.dynamicrw",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen36_27b/synthpai/gdpo.yaml",
+    "module": "lambdamix.training.fixed",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen36_27b/synthpai/grpo.yaml",
+    "module": "lambdamix.training.fixed",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen36_27b/synthpai/hoe.yaml",
+    "module": "lambdamix.training.hoe",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen36_27b/synthpai/lambdamix.yaml",
+    "module": "lambdamix.training.lambdamix",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen36_27b/synthpai/lambdamix_no_norm.yaml",
+    "module": "lambdamix.training.lambdamix",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen36_27b/synthpai/moc.yaml",
+    "module": "lambdamix.training.moc",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen36_27b/synthpai/panacea.yaml",
+    "module": "lambdamix.training.panacea",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen36_27b/synthpai/paretopo.yaml",
+    "module": "lambdamix.training.paretopo",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen36_27b/synthpai/prism.yaml",
+    "module": "lambdamix.training.prism",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen36_27b/synthpai/prompt.yaml",
+    "module": "lambdamix.training.prompt",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen3_4b/gsm8k/dynamicrw.yaml",
+    "module": "lambdamix.training.dynamicrw",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen3_4b/gsm8k/gdpo.yaml",
+    "module": "lambdamix.training.fixed",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen3_4b/gsm8k/grpo.yaml",
+    "module": "lambdamix.training.fixed",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen3_4b/gsm8k/hoe.yaml",
+    "module": "lambdamix.training.hoe",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen3_4b/gsm8k/lambdamix.yaml",
+    "module": "lambdamix.training.lambdamix",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen3_4b/gsm8k/lambdamix_no_norm.yaml",
+    "module": "lambdamix.training.lambdamix",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen3_4b/gsm8k/moc.yaml",
+    "module": "lambdamix.training.moc",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen3_4b/gsm8k/panacea.yaml",
+    "module": "lambdamix.training.panacea",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen3_4b/gsm8k/paretopo.yaml",
+    "module": "lambdamix.training.paretopo",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen3_4b/gsm8k/prism.yaml",
+    "module": "lambdamix.training.prism",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen3_4b/gsm8k/prompt.yaml",
+    "module": "lambdamix.training.prompt",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen3_4b/pku/dynamicrw.yaml",
+    "module": "lambdamix.training.dynamicrw",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen3_4b/pku/gdpo.yaml",
+    "module": "lambdamix.training.fixed",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen3_4b/pku/grpo.yaml",
+    "module": "lambdamix.training.fixed",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen3_4b/pku/hoe.yaml",
+    "module": "lambdamix.training.hoe",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen3_4b/pku/lambdamix.yaml",
+    "module": "lambdamix.training.lambdamix",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen3_4b/pku/lambdamix_no_norm.yaml",
+    "module": "lambdamix.training.lambdamix",
+    "processes": 1,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen3_4b/pku/moc.yaml",
+    "module": "lambdamix.training.moc",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen3_4b/pku/panacea.yaml",
+    "module": "lambdamix.training.panacea",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen3_4b/pku/paretopo.yaml",
+    "module": "lambdamix.training.paretopo",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen3_4b/pku/preference_vector_harmless_minus.yaml",
+    "module": "lambdamix.training.preference_vector",
+    "processes": 8,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen3_4b/pku/preference_vector_harmless_plus.yaml",
+    "module": "lambdamix.training.preference_vector",
+    "processes": 8,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen3_4b/pku/preference_vector_helpful_minus.yaml",
+    "module": "lambdamix.training.preference_vector",
+    "processes": 8,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen3_4b/pku/preference_vector_helpful_plus.yaml",
+    "module": "lambdamix.training.preference_vector",
+    "processes": 8,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen3_4b/pku/prism.yaml",
+    "module": "lambdamix.training.prism",
+    "processes": 4,
+    "environment": {}
+  },
+  {
+    "config": "configs/paper/qwen3_4b/pku/prompt.yaml",
+    "module": "lambdamix.training.prompt",
+    "processes": 4,
+    "environment": {}
+  }
+]
